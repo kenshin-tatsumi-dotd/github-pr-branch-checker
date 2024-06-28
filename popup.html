@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub PR Branch Checker</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+      }
+      input,
+      button {
+        margin: 5px 0;
+      }
+      #repoList {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>GitHub PR Branch Checker</h2>
+    <input
+      type="text"
+      id="repoName"
+      placeholder="Repository name (e.g. owner/repo)"
+    />
+    <input type="text" id="defaultBranch" placeholder="Default base branch" />
+    <button id="add">Add/Update Repository</button>
+    <div id="repoList"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
